@@ -2,7 +2,7 @@ import BlogsLanding from '../../containers/BlogsLanding/BlogsLanding'
 import BlogsList from '../../components/BlogsList/BlogsList'
 import AddNewBlogButton from '../../components/Buttons/AddNewBlogButton'
 
-import { useEffect } from 'react'
+import React, { Suspense, useEffect } from 'react'
 
 import BlogsLoading from '../../components/Loading/BlogsLoading'
 import { useBlog } from '../../hooks/useBlog'
@@ -10,6 +10,7 @@ import { useSelector } from 'react-redux'
 import type { RootState } from '../../redux/store'
 
 interface Props { }
+const LazyBlogsList = React.lazy(() => import('../../components/BlogsList/BlogsList'));
 
 function Blogs(props: Props) {
     const { } = props
@@ -29,7 +30,9 @@ function Blogs(props: Props) {
                 isLoading ? <BlogsLoading /> :
                     (<>
                         <BlogsLanding />
-                        < BlogsList />
+                        <Suspense>
+                            <LazyBlogsList />
+                        </Suspense>
                         <AddNewBlogButton />
                     </>)
             }
