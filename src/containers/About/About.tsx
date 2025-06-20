@@ -1,4 +1,3 @@
-import React from 'react'
 import PortfolioSection from '../../components/PortfolioSection/PortfolioSection'
 
 interface Props { }

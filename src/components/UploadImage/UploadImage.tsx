@@ -1,4 +1,3 @@
-import type { FormikProps } from 'formik'
 import React, { useEffect, useState } from 'react'
 
 interface Props {
@@ -9,7 +8,7 @@ interface Props {
 
 function UploadImage(props: Props) {
     const { handleChange, url = null, handleBlur } = props
-    const [file, setFile] = useState<File | null>(url)
+    const [_, setFile] = useState<File | null>(url)
     const [previewUrl, setPreviewUrl] = useState<string | null>()
     const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         const selectedFile = e.target.files?.[0]

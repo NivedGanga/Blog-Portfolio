@@ -1,4 +1,3 @@
-import React from 'react'
 import { FaArrowRight, FaArrowDown } from "react-icons/fa6";
 import PortfolioButton from '../../components/Buttons/PortfolioButton';
 interface Props { }

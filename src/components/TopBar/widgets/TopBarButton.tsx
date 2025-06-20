@@ -1,4 +1,3 @@
-import React from 'react'
 import { useTheme } from '../../../hooks/ThemeProvider'
 import { useLocation, useNavigate } from 'react-router-dom'
 

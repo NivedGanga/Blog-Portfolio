@@ -7,7 +7,6 @@ import { useEffect } from 'react'
 import BlogsLoading from '../../components/Loading/BlogsLoading'
 import { useBlog } from '../../hooks/useBlog'
 import { useSelector } from 'react-redux'
-import type { Reducer } from 'redux'
 import type { RootState } from '../../redux/store'
 
 interface Props { }
@@ -34,7 +33,6 @@ function Blogs(props: Props) {
                         <AddNewBlogButton />
                     </>)
             }
-
 
         </div>
     )

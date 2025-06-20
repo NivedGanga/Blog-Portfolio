@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import { IoMdMenu } from "react-icons/io";
 import TopBarButton from '../TopBar/widgets/TopBarButton';
 import { topBarRoutes } from '../../utils/routes';

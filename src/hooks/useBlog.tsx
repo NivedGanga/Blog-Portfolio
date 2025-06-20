@@ -1,7 +1,6 @@
 import { useState } from "react"
 import type { BlogModel } from "../models/BlogModel"
 import { blogService } from "../services/blog_services"
-import { cloudinaryConfig } from '../../cloudinary.config'
 import { setBlogs } from '../redux/slices/blogSlice'
 import { useDispatch } from "react-redux"
 import { useNavigate } from "react-router-dom"
@@ -19,7 +18,7 @@ export const useBlog = () => {
     const saveBlog = async (blog: BlogModel) => {
         setLoading(true)
         await blogServices.saveBlog(blog)
-            .then((res) => {
+            .then(() => {
                 setSuccess(true)
             }
             )

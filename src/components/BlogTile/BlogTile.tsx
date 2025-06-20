@@ -1,4 +1,3 @@
-import React from 'react'
 import type { BlogModel } from '../../models/BlogModel'
 import { useNavigate } from 'react-router-dom'
 import { cloudinaryService } from '../../services/cloudinary_service'

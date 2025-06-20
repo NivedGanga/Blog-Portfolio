@@ -1,4 +1,3 @@
-import React from 'react'
 import './ContactMe.css'
 import ContactForm from '../../components/ContactForm/ContactForm'
 

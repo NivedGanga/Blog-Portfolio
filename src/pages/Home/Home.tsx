@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import About from '../../containers/About/About'
 import Landing from '../../containers/Landing/Landing'
 import BlogsOverview from '../../containers/BlogsOverview/BlogsOverview'

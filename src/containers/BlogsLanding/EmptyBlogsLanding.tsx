@@ -1,4 +1,3 @@
-import AddNewBlogButton from '../../components/Buttons/AddNewBlogButton'
 import nodataimage from '../../assets/no_data_cloud_lottie.json'
 import Lottie from "lottie-react";
 import { BsArrowRight } from 'react-icons/bs';

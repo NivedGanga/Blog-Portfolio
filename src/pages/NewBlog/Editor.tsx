@@ -1,5 +1,5 @@
-import Quill, { Delta } from 'quill';
-import React, { forwardRef, useEffect, useLayoutEffect, useRef } from 'react';
+import Quill from 'quill';
+import { forwardRef, useEffect, useRef } from 'react';
 import 'quill/dist/quill.snow.css';
 
 interface EditorProps {

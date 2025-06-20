@@ -1,4 +1,3 @@
-import React from 'react'
 import loadingAnimation from "../../assets/loading.gif"
 interface Props { }
 

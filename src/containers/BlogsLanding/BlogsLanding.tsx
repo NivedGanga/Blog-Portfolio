@@ -1,7 +1,5 @@
 import type { RootState } from '../../redux/store'
-import React, { useEffect, useRef, type Ref } from 'react'
 import { useSelector } from 'react-redux'
-import type { BlogModel } from '../../models/BlogModel'
 import { BsArrowRight } from 'react-icons/bs'
 import { useNavigate } from 'react-router-dom'
 import EmptyBlogsLanding from './EmptyBlogsLanding'

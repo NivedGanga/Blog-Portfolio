@@ -1,8 +1,5 @@
-import React from 'react'
 import ContactTextField from '../ContactTextField/ContactTextField'
 import PortfolioButton from '../Buttons/PortfolioButton'
-import { emailSerices } from '../../services/email_service'
-import { useContact } from '../../hooks/Contact/useContact'
 import { useContactForm } from '../../hooks/Contact/useContactForm'
 
 interface Props { }

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import PortfolioSection from '../../components/PortfolioSection/PortfolioSection'
 import BlogOverviewTile from '../../components/BlogOverviewTile/BlogOverviewTile'
 import { FaArrowRight } from 'react-icons/fa6'

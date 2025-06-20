@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { Cloudinary } from "@cloudinary/url-gen";
 
 export const cloudinaryConfig = new Cloudinary({

@@ -1,4 +1,4 @@
-import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
+import emailjs from '@emailjs/browser';
 import type { ContactModal } from '../hooks/Contact/useContactForm';
 
 

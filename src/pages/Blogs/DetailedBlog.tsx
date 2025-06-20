@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react'
+import { useEffect, useRef } from 'react'
 import { useParams } from 'react-router-dom';
 import { useBlog } from '../../hooks/useBlog';
 import BlogsLoading from '../../components/Loading/BlogsLoading';
@@ -6,10 +6,6 @@ import './DetailedBlog.css'
 import { useBlogContextMenu } from '../../hooks/useBlogContextMenu';
 import BlogContextMenu from '../../components/ContextMenu/BlogContextMenu';
 import ProgressLoading from '../../components/Loading/ProgressLoading';
-
-interface params {
-    id: string
-}
 
 function DetailedBlog() {
     const { id } = useParams<{ id: string }>();
