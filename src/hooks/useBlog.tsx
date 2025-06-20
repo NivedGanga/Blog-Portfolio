@@ -19,6 +19,7 @@ export const useBlog = () => {
         setLoading(true)
         await blogServices.saveBlog(blog)
             .then(() => {
+                getBlogs()
                 setSuccess(true)
             }
             )
