@@ -79,6 +79,7 @@ export const useBlog = () => {
         setLoading(true)
         await blogServices.deleteBlogService(id)
             .then(() => {
+                getBlogs()
                 setSuccess(null)
                 navigate(-1)
             })
