@@ -3,10 +3,9 @@ import Lottie from "lottie-react";
 import { BsArrowRight } from 'react-icons/bs';
 import { useNavigate } from 'react-router-dom';
 
-interface Props { }
 
-function EmptyBlogsLanding(props: Props) {
-    const { } = props
+
+function EmptyBlogsLanding() {
     const navigate = useNavigate()
     return (
         <div className='my-20 h-[50vh] grid place-content-center place-items-center relative'>

@@ -2,10 +2,9 @@ import BlogTile from '../BlogTile/BlogTile'
 import { useSelector } from 'react-redux'
 import type { RootState } from '../../redux/store'
 
-interface Props { }
 
-function BlogsList(props: Props) {
-    const { } = props
+
+function BlogsList() {
     const blogs = useSelector((state: RootState) => state.blog.blogs)
     return (
         blogs.length > 1 &&

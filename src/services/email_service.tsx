@@ -21,7 +21,7 @@ export const emailSerices = () => {
             );
             return true
         } catch (err) {
-            console.log(err)
+
             return err
         }
     }

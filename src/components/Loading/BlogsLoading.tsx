@@ -3,10 +3,10 @@ import Skeleton from 'react-loading-skeleton'
 import 'react-loading-skeleton/dist/skeleton.css'
 
 
-interface Props { }
 
-function BlogsLoading(props: Props) {
-    const { } = props
+
+function BlogsLoading() {
+    
 
     return (
         <div className='p-5 flex max-md:flex-col gap-10 my-20 max-md:mt-5 w-full'>

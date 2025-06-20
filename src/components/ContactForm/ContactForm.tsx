@@ -2,10 +2,9 @@ import ContactTextField from '../ContactTextField/ContactTextField'
 import PortfolioButton from '../Buttons/PortfolioButton'
 import { useContactForm } from '../../hooks/Contact/useContactForm'
 
-interface Props { }
 
-function ContactForm(props: Props) {
-    const { } = props
+
+function ContactForm() {
     const { formik } = useContactForm()
     return (
         <>

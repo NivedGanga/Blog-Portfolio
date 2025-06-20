@@ -1,9 +1,9 @@
+import React from "react";
 import { FaArrowRight, FaArrowDown } from "react-icons/fa6";
 import PortfolioButton from '../../components/Buttons/PortfolioButton';
-interface Props { }
 
-function Landing(props: Props) {
-    const { } = props
+
+const Landing = React.memo(() => {
 
     return (
         <div id='home' className='w-full h-[70vh] grid place-content-center'>
@@ -23,11 +23,10 @@ function Landing(props: Props) {
                             <FaArrowDown />  Download cv
                         </PortfolioButton>
                     </a>
-
                 </div>
             </div>
         </div>
     )
 }
-
+)
 export default Landing

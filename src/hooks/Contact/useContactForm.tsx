@@ -1,4 +1,4 @@
-import {  useFormik } from 'formik'
+import { useFormik } from 'formik'
 import * as Yup from 'yup'
 import { useContact } from './useContact'
 
@@ -36,7 +36,7 @@ export const useContactForm = () => {
             }
             submitContactForm(formData)
                 .then(() => {
-                    console.log("values submitted")
+
                     formik.resetForm()
                     formik.setTouched({})
                 })

@@ -13,7 +13,7 @@ function TopBarButton(props: Props) {
     const navigate = useNavigate()
     const handleScroll = (id: string): void => {
         if (location.pathname !== '/') {
-            console.log(location.pathname)
+
             navigate(`/#${id}`)
             return;
         }

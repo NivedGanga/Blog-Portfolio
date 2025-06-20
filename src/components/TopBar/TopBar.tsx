@@ -4,10 +4,9 @@ import HamburgerMenu from "../HamburgerMenu/HamburgerMenu"
 import Switch from "./widgets/SwitchButton"
 import TopBarButton from "./widgets/TopBarButton"
 
-interface Props { }
 
-function TopBar(props: Props) {
-    const { } = props
+
+function TopBar() {
     return (
         <div className="w-full h-24 flex justify-center items-center">
             <div className="flex-1 flex justify-center items-center gap-10 max-md:hidden">

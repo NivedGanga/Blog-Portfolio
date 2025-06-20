@@ -12,6 +12,7 @@ function BlogsOverview() {
     const { isLoading, getBlogs, blogs } = useBlog()
     useEffect(() => {
         getBlogs()
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
     return (
         <div id='blogs-overview' className='my-56'>

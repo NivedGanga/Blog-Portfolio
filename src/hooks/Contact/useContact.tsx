@@ -13,7 +13,7 @@ export const useContact = () => {
                 dispatch(setSuccess('success'))
             })
             .catch((error) => {
-                console.log(error)
+
                 dispatch(setError(error))
             })
         dispatch(setLoading(false))

@@ -4,16 +4,15 @@ import { BsArrowRight } from 'react-icons/bs'
 import { useNavigate } from 'react-router-dom'
 import EmptyBlogsLanding from './EmptyBlogsLanding'
 
-interface Props { }
 
-function BlogsLanding(props: Props) {
-    const { } = props
+
+function BlogsLanding() {
     const blog = useSelector((state: RootState) => state.blog.blogs)[0]
 
     const navigate = useNavigate()
     return (
         blog ?
-            <div className='p-5 flex gap-10 max-md:gap-5 my-20 max-md:flex-col max-md:mt-5'>
+            <div id='blogs' className='p-5 flex gap-10 max-md:gap-5 mb-20 pt-20 max-md:flex-col max-md:mt-5'>
                 <div className='flex-1'>
                     <img className='aspect-[4/3] h-fit  object-cover rounded-2xl'
                         src={`${blog.coverImage}`}

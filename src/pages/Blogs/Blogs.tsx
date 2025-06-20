@@ -8,19 +8,23 @@ import { useBlog } from '../../hooks/useBlog'
 import { useSelector } from 'react-redux'
 import type { RootState } from '../../redux/store'
 
-interface Props { }
+
 const LazyBlogsList = React.lazy(() => import('../../components/BlogsList/BlogsList'));
 
-function Blogs(props: Props) {
-    const { } = props
+function Blogs() {
     const { getBlogs, isLoading } = useBlog()
     const stateBlogs = useSelector((state: RootState) => state.blog.blogs)
 
     useEffect(() => {
+        // const targetElement = document.getElementById("blogs");
+        // if (targetElement) {
+        //     targetElement.scrollIntoView({ behavior: 'smooth' });
+        // }
         if (stateBlogs.length == 0) {
-            console.log("fetching blogs")
+
             getBlogs()
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     return (

@@ -5,7 +5,7 @@ export const useBlogContextMenu = () => {
     const [menuVisible, setMenuVisible] = useState(false);
     const [menuPosition, setMenuPosition] = useState({ x: 0, y: 0 });
     const navigate = useNavigate()
-    
+
     const handleContextMenu = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
         e.preventDefault();
         setMenuVisible(true);
@@ -28,7 +28,7 @@ export const useBlogContextMenu = () => {
                 navigate(`/blogs/edit-blog/${id}`)
                 break;
             case 'Delete':
-                console.log("helloo delte fucntion callling")
+
                 deleteBlog(id)
                 break;
             default:

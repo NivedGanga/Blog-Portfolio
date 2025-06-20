@@ -8,7 +8,7 @@ const Switch: React.FC = () => {
 
     useEffect(() => {
         const path = location.pathname
-        console.log(path)
+
         if (path.indexOf('/blogs') >= 0) {
             setActive('blog')
         } else if (path === '/') {

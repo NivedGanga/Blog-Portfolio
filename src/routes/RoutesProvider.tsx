@@ -5,11 +5,9 @@ import Blogs from "../pages/Blogs/Blogs"
 import NewBlog from "../pages/NewBlog/NewBlog"
 import DetailedBlog from "../pages/Blogs/DetailedBlog"
 
-interface Props { }
 
-function RoutesProvider(props: Props) {
-    const { } = props
 
+function RoutesProvider() {
     return (
         <BrowserRouter>
             <Routes>

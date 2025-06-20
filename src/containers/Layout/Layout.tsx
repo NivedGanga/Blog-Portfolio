@@ -17,7 +17,6 @@ const Layout: React.FC = () => {
         const viewportHeight = window.innerHeight;
         const fadeDistance = viewportHeight * 1.5;
         const distanceFromBottom = scrollHeight - scrollTop;
-
         const opacity = Math.min(1, Math.max(0, (distanceFromBottom - fadeDistance) / fadeDistance));
 
         if (theme.isDark()) {
@@ -31,6 +30,7 @@ const Layout: React.FC = () => {
         } else {
             setTheme('dark')
         }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [location])
 
     return (

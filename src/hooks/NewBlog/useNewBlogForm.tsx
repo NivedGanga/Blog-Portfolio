@@ -67,7 +67,7 @@ export const useNewBlogForm = () => {
                 title: blog.title,
                 blogData: blog.blogData
             };
-            console.log("Setting form data to:", newFormData);
+            ;
             if (quillRef.current && blog.blogData) {
                 const editor = quillRef.current;
                 editor.clipboard.dangerouslyPasteHTML(blog.blogData);
@@ -77,11 +77,11 @@ export const useNewBlogForm = () => {
             )
         }
         if (!id && success) {
-            console.log("upload success")
+
             navigate(-1)
         }
         if (error) {
-            console.log(error)
+
         }
     }, [success, error, editSuccess])
 

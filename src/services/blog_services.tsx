@@ -18,7 +18,7 @@ export const blogService = () => {
                     })
             return true
         } catch (error) {
-            console.log(error)
+
             throw error
         }
     }
@@ -72,7 +72,7 @@ export const blogService = () => {
             }
             return true
         } catch (error) {
-            console.log(error)
+
             throw error
         }
     }

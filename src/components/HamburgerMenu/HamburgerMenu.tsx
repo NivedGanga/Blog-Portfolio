@@ -3,10 +3,9 @@ import { IoMdMenu } from "react-icons/io";
 import TopBarButton from '../TopBar/widgets/TopBarButton';
 import { topBarRoutes } from '../../utils/routes';
 
-interface Props { }
 
-function HamburgerMenu(props: Props) {
-    const { } = props
+
+function HamburgerMenu() {
     const [isOpen, setIsOpen] = useState(false);
     const menuRef = useRef<HTMLDivElement>(null);
     const iconRef = useRef<HTMLDivElement>(null);

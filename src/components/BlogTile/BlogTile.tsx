@@ -10,7 +10,6 @@ function BlogTile(props: Props) {
     const { blog } = props
     const url = blog.coverImage!.toString()
     const { getResizedImage } = cloudinaryService()
-    console.log("blog tile component loaded:", blog.title)
 
     const navigate = useNavigate()
     return (

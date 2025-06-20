@@ -39,9 +39,9 @@ export const useBlog = () => {
                     date: Date.parse(doc.data().date),
                     id: doc.id
                 }))
-                console.log(blogsArray)
+
                 setBlogsResult(blogsArray)
-                console.log("seting blogs")
+
                 dispatch(setBlogs(blogsArray))
             })
             .catch((error) => {
@@ -53,7 +53,7 @@ export const useBlog = () => {
     const getDetailedBlog = async (id: string) => {
         setLoading(true)
         setBlog(null)
-        console.log(id)
+
         await blogServices.fetchDetailedBlog(id)
             .then((res) => {
                 if (res) {
@@ -62,7 +62,7 @@ export const useBlog = () => {
                         date: new Date(res.data()?.date),
                         id: res.id
                     } as BlogModel
-                    console.log(detailedBlog)
+
                     setBlog(detailedBlog)
                     setSuccess(true)
                 }
@@ -75,7 +75,7 @@ export const useBlog = () => {
     }
 
     const deleteBlog = async (id: string) => {
-        console.log("delete functoin called", id)
+
         setLoading(true)
         await blogServices.deleteBlogService(id)
             .then(() => {

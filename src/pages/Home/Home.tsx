@@ -7,11 +7,9 @@ import { useSelector } from 'react-redux'
 import type { RootState } from '../../redux/store'
 import ProgressLoading from '../../components/Loading/ProgressLoading'
 
-interface Props { }
 
-function Home(props: Props) {
-    const { } = props
 
+function Home() {
     useEffect(() => {
         const hash = location.hash;
         if (hash) {
@@ -19,8 +17,13 @@ function Home(props: Props) {
             if (targetElement) {
                 targetElement.scrollIntoView({ behavior: 'smooth' });
             }
+        } else {
+            const targetElement = document.querySelector('#home');
+            if (targetElement) {
+                targetElement.scrollIntoView({ behavior: 'smooth' });
+            }
         }
-    }, [location]);
+    }, []);
     const contactState = useSelector((state: RootState) => state.contact)
 
     return (

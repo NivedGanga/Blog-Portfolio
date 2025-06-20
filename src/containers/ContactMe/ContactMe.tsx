@@ -1,10 +1,9 @@
 import './ContactMe.css'
 import ContactForm from '../../components/ContactForm/ContactForm'
 
-interface Props { }
 
-function ContactMe(props: Props) {
-    const { } = props
+
+function ContactMe() {
 
     return (
         <div className='main-map-bg flex max-md:flex-col mt-26 h-[100vh] p-[15%] max-md:p-0'>

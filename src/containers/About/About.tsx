@@ -1,10 +1,8 @@
 import PortfolioSection from '../../components/PortfolioSection/PortfolioSection'
 
-interface Props { }
 
-function About(props: Props) {
-    const { } = props
 
+function About() {
     return (
         <div id='about' className='my-56'>
             <PortfolioSection title='About'>
