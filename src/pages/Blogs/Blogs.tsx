@@ -1,5 +1,4 @@
 import BlogsLanding from '../../containers/BlogsLanding/BlogsLanding'
-import BlogsList from '../../components/BlogsList/BlogsList'
 import AddNewBlogButton from '../../components/Buttons/AddNewBlogButton'
 
 import React, { Suspense, useEffect } from 'react'
