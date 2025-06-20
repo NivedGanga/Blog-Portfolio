@@ -1,0 +1,34 @@
+.gradient-blur {
+    position: absolute;
+    overflow: hidden;
+    bottom: 0;
+}
+
+.gradient-blur::before,
+.gradient-blur::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+}
+
+.gradient-blur::before {
+    backdrop-filter: blur(35px);
+    mask: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.7) 30%, rgba(0, 0, 0, 0) 60%);
+    -webkit-mask: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.7) 30%, rgba(0, 0, 0, 0) 60%);
+}
+
+.gradient-blur::after {
+    backdrop-filter: blur(0px);
+    mask: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0) 80%);
+    -webkit-mask: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0) 80%);
+}
+
+/* Ensure the button stays above the blur effect */
+.gradient-blur>* {
+    position: relative;
+    z-index: 1;
+}

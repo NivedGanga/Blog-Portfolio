@@ -1,0 +1,23 @@
+.main-map-bg {
+    background-image: url('../../assets/map.png');
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: contain;
+}
+
+.map-preview {
+    background-image: none;
+}
+
+@media only screen and (max-width:768px) {
+    .main-map-bg {
+        background-image: none;
+    }
+
+    .map-preview {
+        background-image: url('../../assets/cropped_map.png') !important;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+}
